@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <link rel="stylesheet" href="CSS/Themes.css">
+    <link rel="stylesheet" href="CSS/Index.css">
+    <link rel="stylesheet" href="CSS/Content.css">
+    <link rel="stylesheet" href="CSS/AudioPlayer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Sonorous</title>
+  </head>
+
+  <body>
+    <div id="Sidebar1" class="Sidebars">
+      <h1 style="font-size: 125%;">Sonorous</h1>
+      <button onclick="ShowSettings()">Settings</button>
+    </div>
+    <h1 id="IntroHeading">Loading...</h1>
+    <br>
+    <div id="Overview" class="Pages">
+      <h1>Playlists</h1>
+      <div id="PlaylistRow1" class="PlaylistRows">
+        <div id="PlaylistItem1" class="PlaylistItems" onclick="PlaylistClick(1)"></div>
+        <div id="PlaylistItem2" class="PlaylistItems" onclick="PlaylistClick(2)"></div>
+        <div id="PlaylistItem3" class="PlaylistItems" onclick="PlaylistClick(3)"></div>
+        <div id="PlaylistItem4" class="PlaylistItems" onclick="PlaylistClick(4)"></div>
+        <div id="PlaylistItem5" class="PlaylistItems" onclick="PlaylistClick(5)"></div>
+      </div>
+      <br>
+      <div id="PlaylistRow2" class="PlaylistRows">
+        <div id="PlaylistItem6" class="PlaylistItems" onclick="PlaylistClick(6)"></div>
+        <div id="PlaylistItem7" class="PlaylistItems" onclick="PlaylistClick(7)"></div>
+        <div id="PlaylistItem8" class="PlaylistItems" onclick="PlaylistClick(8)"></div>
+        <div id="PlaylistItem9" class="PlaylistItems" onclick="PlaylistClick(9)"></div>
+        <div id="PlaylistItem10" class="PlaylistItems" onclick="PlaylistClick(10)"></div>
+      </div>
+    </div>
+    <br>
+    <div id="PlaylistsView" class="Pages">
+      <h1 id="PlaylistsView_Title">Loading...</h1>
+      <p id="PlaylistsView_Description">The playlist is being loaded...</p>
+      <p id="PlaylistsView_Created"></p>
+      <br>
+      <table>
+        <tbody>
+          <tr>
+            <th>Title</th>
+            <th>Artist</th>
+            <th>Year</th>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <button onclick="DeletePlaylist(Sonorous.Viewing)">Delete Playlist</button>
+    </div>
+    <div id="SettingsView" class="Pages">
+      <h1>Settings</h1>
+      <p>Configure the right Sonorous experience.</p>
+      <h2>Data</h2>
+      <p>Data can be controlled here.</p>
+      <h3>Usage</h3>
+      <div id="DataUsedMeter" class="IgnoreDefaultCSS">&nbsp;</div>
+      <p>
+        You have used <strong id="DataUsed">0</strong> bytes of <strong>5 000 000</strong> bytes local storage on this device.
+        <br>You've used <strong id="DataUsedPercent">0%</strong> of the available storage, 5 MB.
+        <br>
+        You have <strong id="DataRemaining">5 000 000</strong> bytes remaining.
+      </p>
+      <br>
+      <button class="DangerousButton" onclick="CleanData()">Clean Data</button>
+    </div>
+    <script src="JavaScript/Index.js"></script>
+    <script src="JavaScript/Playlists.js"></script>
+    <script src="JavaScript/AudioPlayer.js"></script>
+
+  </body>
+
+</html>

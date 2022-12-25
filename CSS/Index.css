@@ -1,0 +1,70 @@
+* {
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--BodyBackground);
+  overflow: auto;
+  padding-left: calc(var(--Padding) + 10% + 5%);
+}
+
+div:not(.IgnoreDefaultCSS, .Sidebars),
+table:not(.IgnoreDefaultCSS, .Sidebars) {
+  background-color: var(--DivBackground);
+  border-style: solid;
+  border-width: var(--BorderWidth);
+  border-color: var(--BorderColor);
+  border-radius: var(--BorderRadius);
+  padding: var(--Padding);
+}
+
+table {
+  width: 100%;
+}
+
+.Sidebars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 100%;
+  background-color: var(--SidebarBackground);
+  padding: var(--Padding);
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+}
+
+.PlaylistRows {
+  display: flex;
+  flex-direction: row;
+}
+
+.PlaylistRows .PlaylistItems {
+  width: calc(50% / 5);
+  height: 50px;
+}
+
+.PlaylistRows .PlaylistItems:not(:first-child) {
+  margin-left: 10%;
+}
+
+.PlaylistItems {
+  background-image: url('/Media/Create.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.Pages:not(#Overview) {
+  display: none;
+}

@@ -1,0 +1,48 @@
+body {
+  color: var(--BodyColor);
+  font-size: var(--BodyFontSize);
+  font-family: var(--BodyFontFamily);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--HeadingFontFamily);
+}
+
+h1 {  font-size: var(--H1FontSize);  }
+h2 {  font-size: var(--H2FontSize);  }
+h3 {  font-size: var(--H3FontSize);  }
+h4 {  font-size: var(--H4FontSize);  }
+h5 {  font-size: var(--H5FontSize);  }
+h6 {  font-size: var(--H6FontSize);  }
+
+button {
+  background-color: var(--Color8);
+  color: var(--Color1);
+  font-family: var(--FontFamily);
+  padding: 10px;
+  border: none;
+  border-radius: var(--BorderRadius);
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-bottom-color: var(--Color5);
+  transition: filter 1s;
+}
+
+button:hover {
+  filter: brightness(75%);
+}
+
+button:active,
+button:focus {
+  filter: brightness(50%);
+}
+
+#DataUsageMeter {
+  width: 100%;
+  border-radius: var(--BorderRadius);
+}

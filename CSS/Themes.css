@@ -1,0 +1,32 @@
+:root {
+  --Color1: #f1ccff; /* Text */
+  --Color2: #b700ff;
+  --Color3: #8b00c2; /* Links on Hover */
+  --Color4: #7300a0; /* Links */
+  --Color5: #58017a; /* Borders */
+  --Color6: #3f0058; /* Divs */
+  --Color7: #310044; /* Sidebars */
+  --Color8: #1d002b; /* Background Color */
+  --BorderRadius: 10px;
+  --BorderWidth: 5px;
+  --Padding: 2.5%;
+
+  --BodyBackground: var(--Color8);
+  --BodyColor: var(--Color1);
+  --BodyFontSize: 2vmin;
+  --BodyFontFamily: 'Poppins', sans-serif;
+
+  --HeadingFontFamily: 'Montserrat', sans-serif;
+  --H1FontSize: 200%;
+  --H2FontSize: 175%;
+  --H3FontSize: 150%;
+  --H4FontSize: 125%;
+  --H5FontSize: 100%;
+  --H6FontSize: 75%;
+
+  --SidebarBackground: var(--Color7);
+  --DivBackground: var(--Color6);
+  --BorderColor: var(--Color5);
+  --LinkColor: var(--Color4);
+  --LinkColor_Hover: var(--Color3);
+}
