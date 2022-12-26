@@ -41,8 +41,3 @@ button:active,
 button:focus {
   filter: brightness(50%);
 }
-
-#DataUsageMeter {
-  width: 100%;
-  border-radius: var(--BorderRadius);
-}

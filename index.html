@@ -45,15 +45,21 @@
       <p id="PlaylistsView_Description">The playlist is being loaded...</p>
       <p id="PlaylistsView_Created"></p>
       <br>
-      <table>
-        <tbody>
+      <table id="PlaylistsView_Table">
+        <tbody id="PlaylistsView_TBody">
           <tr>
+            <th></th>
             <th>Title</th>
+            <th>Album</th>
             <th>Artist</th>
+            <th>Genres</th>
             <th>Year</th>
           </tr>
         </tbody>
       </table>
+      <strong>Share your songs in this playlist as JSON. Paste code to replace your playlist songs.</strong>
+      <br>
+      <textarea id="PlaylistsView_JSON">[]</textarea>
       <br>
       <button onclick="DeletePlaylist(Sonorous.Viewing)">Delete Playlist</button>
     </div>
@@ -63,7 +69,7 @@
       <h2>Data</h2>
       <p>Data can be controlled here.</p>
       <h3>Usage</h3>
-      <div id="DataUsedMeter" class="IgnoreDefaultCSS">&nbsp;</div>
+      <div id="DataUsedMeter" class="IgnoreDefaultCSS"></div>
       <p>
         You have used <strong id="DataUsed">0</strong> bytes of <strong>5 000 000</strong> bytes local storage on this device.
         <br>You've used <strong id="DataUsedPercent">0%</strong> of the available storage, 5 MB.
@@ -76,6 +82,7 @@
     <script src="JavaScript/Index.js"></script>
     <script src="JavaScript/Playlists.js"></script>
     <script src="JavaScript/AudioPlayer.js"></script>
+    <script src="JavaScript/AudioQuery.js"></script>
 
   </body>
 

@@ -4,6 +4,7 @@ var PlaylistData = [
     Title: `Unnamed Playlist 1`,
     Description: `My lovely collection of songs!`,
     Thumbnail: `./Media/Playlist Default.png`,
+    Content: [],
     Created: new Date(-1)
   },
   {
@@ -11,6 +12,7 @@ var PlaylistData = [
     Title: `Unnamed Playlist 2`,
     Description: `My lovely collection of songs!`,
     Thumbnail: `./Media/Playlist Default.png`,
+    Content: [],
     Created: new Date(-1)
   },
   {
@@ -18,6 +20,7 @@ var PlaylistData = [
     Title: `Unnamed Playlist 3`,
     Description: `My lovely collection of songs!`,
     Thumbnail: `./Media/Playlist Default.png`,
+    Content: [],
     Created: new Date(-1)
   },
   {
@@ -25,6 +28,7 @@ var PlaylistData = [
     Title: `Unnamed Playlist 4`,
     Description: `My lovely collection of songs!`,
     Thumbnail: `./Media/Playlist Default.png`,
+    Content: [],
     Created: new Date(-1)
   },
   {
@@ -32,6 +36,7 @@ var PlaylistData = [
     Title: `Unnamed Playlist 5`,
     Description: `My lovely collection of songs!`,
     Thumbnail: `./Media/Playlist Default.png`,
+    Content: [],
     Created: new Date(-1)
   },
   {
@@ -39,6 +44,7 @@ var PlaylistData = [
     Title: `Unnamed Playlist 6`,
     Description: `My lovely collection of songs!`,
     Thumbnail: `./Media/Playlist Default.png`,
+    Content: [],
     Created: new Date(-1)
   },
   {
@@ -46,6 +52,7 @@ var PlaylistData = [
     Title: `Unnamed Playlist 7`,
     Description: `My lovely collection of songs!`,
     Thumbnail: `./Media/Playlist Default.png`,
+    Content: [],
     Created: new Date(-1)
   },
   {
@@ -53,6 +60,7 @@ var PlaylistData = [
     Title: `Unnamed Playlist 8`,
     Description: `My lovely collection of songs!`,
     Thumbnail: `./Media/Playlist Default.png`,
+    Content: [],
     Created: new Date(-1)
   },
   {
@@ -60,6 +68,7 @@ var PlaylistData = [
     Title: `Unnamed Playlist 9`,
     Description: `My lovely collection of songs!`,
     Thumbnail: `./Media/Playlist Default.png`,
+    Content: [],
     Created: new Date(-1)
   },
   {
@@ -67,6 +76,7 @@ var PlaylistData = [
     Title: `Unnamed Playlist 10`,
     Description: `My lovely collection of songs!`,
     Thumbnail: `./Media/Playlist Default.png`,
+    Content: [],
     Created: new Date(-1)
   },
 ];
@@ -109,6 +119,7 @@ function ShowPlaylist(Playlist) {
   document.querySelector(`#PlaylistsView_Title`).innerHTML = PlaylistData[Playlist].Title;
   document.querySelector(`#PlaylistsView_Description`).innerHTML = PlaylistData[Playlist].Description;
   Sonorous.Viewing = Playlist;
+  ResetAudioList();
 }
 
 function CreatePlaylist(Playlist) {
